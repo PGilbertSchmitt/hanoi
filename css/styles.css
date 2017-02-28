@@ -1,0 +1,56 @@
+h1 {
+  font-size: 50px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.hanoi {
+  width: 640px;
+  height: 180px;
+}
+
+.hanoi ul {
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  float: left;
+  border-bottom: 10px solid black;
+}
+
+.hanoi ul.selected {
+  border-color: green;
+}
+
+.hanoi ul:nth-child(2) {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.hanoi li {
+  width: 0px;
+  margin: 10px auto;
+  height: 50px;
+  list-style: none;
+  border-radius: 25px;
+}
+
+.hanoi ul li.disk-1 {
+  width: 33%;
+  background-color: blue;
+}
+.hanoi ul li.disk-2 {
+  width: 66%;
+  background-color: blue;
+}
+.hanoi ul li.disk-3 {
+  width: 100%;
+  background-color: blue;
+}
+
+ul:hover {
+  border-color: #66748c;
+}
+
+.hanoi.game-over ul li {
+  background-color: green;
+}
